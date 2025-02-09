@@ -1,5 +1,5 @@
 # PostgreSQL. Versions 9.3 and up are supported.
-#
+#d
 # Install the pg driver:
 #   gem install pg
 # On macOS with Homebrew:
@@ -16,7 +16,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['Rishabh@123'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
